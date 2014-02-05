@@ -1,7 +1,31 @@
 <div class="jumbotron center">
-     <h1>WebQ</h1>
-     <p>
-       <%= link_to "Log in", "#", class: "btn btn-default btn-lg" %>
-       <%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %>
-  </p>    
+	<div class="container">
+		<div class="col-md-8">
+			<h1>
+				<font  class="titleWebQ PrimColorWebQ">W</font><font class="titleWebQ AltColorWebQ">?</font>
+			</h1>
+			<hr>
+			<br>
+			<p>
+				<% if user_signed_in? %>
+          # do something
+     		<% else %>
+					<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+					<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+				<% end %>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default">			
+				<div class="panel-heading">
+					<strong>Web Questionnaire</strong>
+				</div>
+				<div class="panel-body text-justify"> 
+					Welcome to Web Questionnaire, a tool for designing and distributing questionnaires.<br><br>
+					Web Questionnaire allows the user to develop new questionnaires, manage multiple projects, quickly edit previously created questionnaires, and distribute them to respondents using a variety of methods. 
+					<br><br>Responses are collected and available to the designer from one easy to manage location.
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

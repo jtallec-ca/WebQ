@@ -1,22 +1,35 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
-$body-bg: 						#ecf0f1;
-$font-family-sans-serif:		'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:					45px;
-$navbar-default-bg:				white;
-$navbar-default-brand-color:	#c0392b;
-$brand-primary:					#c0392b;
-$jumbotron-bg:					white;
+//$body-bg: 						#ecf0f1;
+$body-bg: 										#d6dfeb;
+//$font-family-sans-serif:			'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:			'Source Sans Pro', sans-serif;
+$navbar-height:								45px;
+$navbar-default-bg:						white;
+$navbar-default-brand-color:	#133365;
+$brand-primary:								#5d7daf;
+$jumbotron-bg:								white;
 
 @import 'bootstrap';
 
 .center {
-     text-align: center;
+ 	text-align: center;
+}
+
+.alert {
+	background-color: white;
+}
+
+.alert-info {
+	border-color: #5d7daf;
 }
 
 .navbar-brand {
-     font-weight: bold;
+ 	font-weight:	normal;
+	font-family:	'Montserrat Alternates';
+
 }
 
 .page-header {
@@ -24,6 +37,19 @@ $jumbotron-bg:					white;
 	padding-left: 60px;
 	padding-right: 60px;
 	padding-top: 9px;
+}
+
+.titleWebQ {
+	font-family:	'Montserrat Alternates';
+	font-style: 	italic;
+}
+
+.AltColorWebQ {
+	color:	#5d7daf;
+}
+
+.PrimColorWebQ {
+	color:	#133365;
 }
 
 * {
