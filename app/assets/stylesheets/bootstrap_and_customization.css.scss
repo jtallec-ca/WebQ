@@ -107,3 +107,8 @@ body {
 	background-color: none;
 	background: none;
 }
+
+.required:after {
+	content: " *";
+	color: red;
+}

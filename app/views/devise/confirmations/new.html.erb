@@ -12,8 +12,8 @@
 				<%= devise_error_messages! %>
 
 				<div class="form-horizontal">
-				  <div class="form-group">
-				  	<%= f.label :email, class: "col-sm-4 control-label" %>
+					<div class="form-group">
+				  	<%= f.label :email, class: "col-sm-4 control-label required" %>
 				  	<div class="col-sm-8">
 				 			<%= f.email_field :email, placeholder: "Email", :autofocus => true, class: "form-control"  %>
 				 		</div>
